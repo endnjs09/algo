@@ -61,10 +61,10 @@ Visit `http://localhost:3000`
 Submitted code passes through a four-stage pipeline before anything reaches the frontend:
 
 **1. Static Analysis**
-`InjectorService` scans the source using regex (with optional libclang fallback) to identify STL containers and classify their semantic roles — `GRAPH`, `GRID`, `FLOW`, `DIST`, `VISITED`, `PARENT`, and so on.
+`InjectorService` scans the source using regex (with optional libclang fallback) to identify STL containers and classify their semantic roles — `GRAPH`, `GRID`, `FLOW`, `DIST`, `VISITED`, `PARENT`... and so on.
 
 **2. Pattern Detection**
-The engine classifies the overall algorithm into one of several families: `TRAVERSAL`, `SHORTEST_PATH`, `MST`, `SORT`, `DP`, `SEARCH`. This drives color themes and specialized tracing behavior at runtime.
+The engine classifies the overall algorithm into one of several families: `TRAVERSAL`, `SHORTEST_PATH`, `MST`, `SORT`, `DP`, `SEARCH` etc. This drives color themes and specialized tracing behavior at runtime.
 
 **3. Code Rewriting**
 STL containers (`vector`, `queue`, `priority_queue`, `map`, `set`) are transparently substituted with Shadow equivalents that intercept every mutation and emit trace events to `TraceLogger`. Pointer-like variables (binary search bounds, two-pointer indices) are rewritten into `ShadowInt`, which calls `setPointer` on every assignment.
