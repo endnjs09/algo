@@ -4,6 +4,58 @@ A web-based platform that transforms standard C++ algorithm code into interactiv
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js 18+
+- Docker Desktop
+
+### Installation
+
+**1. Clone**
+```bash
+git clone https://github.com/endnjs09/algo.git
+cd algo
+```
+
+**2. Backend**
+```bash
+cd algo-server
+python -m venv .venv
+.venv\Scripts\activate        # Windows
+# source .venv/bin/activate   # macOS / Linux
+pip install -r requirements.txt
+docker build -t algo-sandbox ./sandbox
+```
+
+**3. Frontend**
+```bash
+cd ../algo-client
+npm install
+```
+
+### Running
+
+Open two terminals:
+
+**Terminal 1 — Backend**
+```bash
+cd algo-server
+uvicorn app.main:app --reload
+```
+
+**Terminal 2 — Frontend**
+```bash
+cd algo-client
+npm run dev
+```
+
+Visit `http://localhost:3000`
+
+---
+
 ## How It Works
 
 Submitted code passes through a four-stage pipeline before anything reaches the frontend:
