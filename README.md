@@ -56,6 +56,15 @@ Visit `http://localhost:3000`
 
 ---
 
+## Deployment
+
+> Deployment guide coming soon.
+
+- **Frontend** — Vercel
+- **Backend** — Railway / Render (FastAPI + Docker sandbox)
+
+---
+
 ## How It Works
 
 Submitted code passes through a four-stage pipeline before anything reaches the frontend:
