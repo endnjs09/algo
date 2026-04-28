@@ -1,0 +1,33 @@
+# Vitual env
+.venv/
+venv/
+env/
+
+# env
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# tmp file
+*.tmp
+temp_runner*
+trace.json
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+
+# Docker
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Log
+*.log

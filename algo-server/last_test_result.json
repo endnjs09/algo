@@ -1,0 +1,62 @@
+[
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "set",
+    "values": [
+      100,
+      100,
+      100,
+      100,
+      100
+    ]
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "update_value",
+    "index": 0,
+    "value": 0
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "color",
+    "color": "green",
+    "indices": [
+      0
+    ]
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "update_value",
+    "index": 1,
+    "value": 50
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "color",
+    "color": "green",
+    "indices": [
+      1
+    ]
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "update_value",
+    "index": 2,
+    "value": 20
+  },
+  {
+    "target": "array",
+    "id": "dist",
+    "action": "color",
+    "color": "green",
+    "indices": [
+      2
+    ]
+  }
+]
