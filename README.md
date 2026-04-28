@@ -56,15 +56,6 @@ Visit `http://localhost:3000`
 
 ---
 
-## Deployment
-
-> Deployment guide coming soon.
-
-- **Frontend** — Vercel
-- **Backend** — Railway / Render (FastAPI + Docker sandbox)
-
----
-
 ## How It Works
 
 Submitted code passes through a four-stage pipeline before anything reaches the frontend:
@@ -164,6 +155,15 @@ Code runs inside a Docker container with the following hard limits:
 | Backend | Python, FastAPI |
 | Tracing | C++, TraceLogger, Shadow Containers |
 | Sandbox | Docker, g++ |
+
+---
+
+## Deployment
+
+> Deployment guide coming soon.
+
+- **Frontend** — Vercel
+- **Backend** — ??? (FastAPI + Docker sandbox)
 
 ---
 
