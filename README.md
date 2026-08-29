@@ -166,10 +166,3 @@ Code runs inside a Docker container with the following hard limits:
 - **Backend** — ??? (FastAPI + Docker sandbox)
 
 ---
-
-## Contributing
-
-The two primary extension points are:
-
-- `sandbox/shadow_include/shadow_containers.h` — add support for new container types or array roles
-- `app/services/injector_service.py` — extend pattern detection heuristics or add new rewriting passes
